@@ -15,7 +15,7 @@ export class NotificationService {
   private toastsSignal = signal<ToastMessage[]>([]);
   public toasts = this.toastsSignal.asReadonly();
 
-  public show(message: string, type: 'success' | 'error' | 'info' | 'warning' = 'info', title?: string, duration: number = 4000) {
+  public show(message: string, type: 'success' | 'error' | 'info' | 'warning' = 'info', title?: string, duration = 4000) {
     const id = Math.random().toString(36).substring(2, 9);
     const newToast: ToastMessage = { id, type, title, message, duration };
     
@@ -28,19 +28,19 @@ export class NotificationService {
     }
   }
 
-  public success(message: string, title: string = 'Éxito') {
+  public success(message: string, title = 'Éxito') {
     this.show(message, 'success', title);
   }
 
-  public error(message: string, title: string = 'Error') {
+  public error(message: string, title = 'Error') {
     this.show(message, 'error', title);
   }
 
-  public info(message: string, title: string = 'Información') {
+  public info(message: string, title = 'Información') {
     this.show(message, 'info', title);
   }
 
-  public warning(message: string, title: string = 'Atención') {
+  public warning(message: string, title = 'Atención') {
     this.show(message, 'warning', title);
   }
 

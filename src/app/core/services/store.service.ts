@@ -204,7 +204,7 @@ export class StoreService {
     }
   }
 
-  public addToCart(product: Product, quantity: number = 1) {
+  public addToCart(product: Product, quantity = 1) {
     if (product.stock <= 0) {
       this.notify.warning('Este producto no tiene existencias por el momento');
       return;

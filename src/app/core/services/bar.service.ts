@@ -338,7 +338,7 @@ export class BarService {
     return newEvent;
   }
 
-  public buyTicket(eventId: string, qty: number = 1): boolean {
+  public buyTicket(eventId: string, qty = 1): boolean {
     const event = this.events().find(e => e.id === eventId);
     if (!event) return false;
     if (event.ticketStock < qty) {
