@@ -20,7 +20,7 @@ import { ToastService } from '../../services/toast.service';
             <div>
               <div class="flex items-center gap-2">
                 <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-amber-200 via-white to-amber-400 bg-clip-text text-transparent">
-                  NOCTURNA
+                  NOCTURNA,,,
                 </span>
                 <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   Control
